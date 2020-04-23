@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>一、ES6学习笔记 | laughing&#39;s   blog</title>
+    <meta name="description" content="Programming  knowledge   sharing .">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.02c4e9f6.css" as="style"><link rel="preload" href="/assets/js/app.5370373b.js" as="script"><link rel="preload" href="/assets/js/3.9dfbd713.js" as="script"><link rel="preload" href="/assets/js/1.b0fc45b7.js" as="script"><link rel="preload" href="/assets/js/29.2518e15f.js" as="script"><link rel="prefetch" href="/assets/js/10.828f68d4.js"><link rel="prefetch" href="/assets/js/11.cb5a1cbf.js"><link rel="prefetch" href="/assets/js/12.7bbad55f.js"><link rel="prefetch" href="/assets/js/13.ddf1af3b.js"><link rel="prefetch" href="/assets/js/14.50d7c8d4.js"><link rel="prefetch" href="/assets/js/15.5ee10fdc.js"><link rel="prefetch" href="/assets/js/16.4c2c7c01.js"><link rel="prefetch" href="/assets/js/17.34a4aea5.js"><link rel="prefetch" href="/assets/js/18.aab62c32.js"><link rel="prefetch" href="/assets/js/19.3f8fc721.js"><link rel="prefetch" href="/assets/js/20.96139246.js"><link rel="prefetch" href="/assets/js/21.e458021a.js"><link rel="prefetch" href="/assets/js/22.7fb123a0.js"><link rel="prefetch" href="/assets/js/23.51da28ea.js"><link rel="prefetch" href="/assets/js/24.65c2396e.js"><link rel="prefetch" href="/assets/js/25.a3f9cedc.js"><link rel="prefetch" href="/assets/js/26.3c5f5a98.js"><link rel="prefetch" href="/assets/js/27.a6e8b3b8.js"><link rel="prefetch" href="/assets/js/28.af46094a.js"><link rel="prefetch" href="/assets/js/30.5056206b.js"><link rel="prefetch" href="/assets/js/31.7af4c5a4.js"><link rel="prefetch" href="/assets/js/32.e649c132.js"><link rel="prefetch" href="/assets/js/33.85bc8594.js"><link rel="prefetch" href="/assets/js/34.bff84077.js"><link rel="prefetch" href="/assets/js/35.949f3b6d.js"><link rel="prefetch" href="/assets/js/36.165e79ea.js"><link rel="prefetch" href="/assets/js/37.4cc933d6.js"><link rel="prefetch" href="/assets/js/38.f2eeb7ed.js"><link rel="prefetch" href="/assets/js/39.d444da3e.js"><link rel="prefetch" href="/assets/js/4.107d77f1.js"><link rel="prefetch" href="/assets/js/40.5719db48.js"><link rel="prefetch" href="/assets/js/41.2778e40e.js"><link rel="prefetch" href="/assets/js/42.b3e933bc.js"><link rel="prefetch" href="/assets/js/43.442644a4.js"><link rel="prefetch" href="/assets/js/44.0d413994.js"><link rel="prefetch" href="/assets/js/45.0f7a775b.js"><link rel="prefetch" href="/assets/js/46.d8b34df6.js"><link rel="prefetch" href="/assets/js/47.4ca28d95.js"><link rel="prefetch" href="/assets/js/48.b3134363.js"><link rel="prefetch" href="/assets/js/5.c2006030.js"><link rel="prefetch" href="/assets/js/6.6ea098e1.js"><link rel="prefetch" href="/assets/js/7.457fa98e.js"><link rel="prefetch" href="/assets/js/8.2ec5f873.js"><link rel="prefetch" href="/assets/js/9.b445b420.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.02c4e9f6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-5df996d9><div data-v-5df996d9><div id="loader-wrapper" class="loading-wrapper" data-v-4b73742e data-v-5df996d9 data-v-5df996d9><div class="loader-main" data-v-4b73742e><div data-v-4b73742e></div><div data-v-4b73742e></div><div data-v-4b73742e></div><div data-v-4b73742e></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-1808498d data-v-5df996d9 data-v-5df996d9><h3 class="title" style="display:none;" data-v-1808498d data-v-1808498d>laughing's   blog</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-1808498d data-v-1808498d><input type="password" value="" data-v-1808498d> <span data-v-1808498d>Konck! Knock!</span> <button data-v-1808498d>OK</button></label> <div class="footer" style="display:none;" data-v-1808498d data-v-1808498d><span data-v-1808498d><i class="iconfont reco-theme" data-v-1808498d></i> <a target="blank" href="https://vuepress.recoluan.com" data-v-1808498d>vuepress</a></span> <span data-v-1808498d><i class="iconfont reco-copyright" data-v-1808498d></i> <a data-v-1808498d><span data-v-1808498d>laughing</span>
+            
+          <span data-v-1808498d>2019 - </span>
+          2020
+        </a></span></div></div> <div class="hide" data-v-5df996d9><header class="navbar" data-v-5df996d9><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/head.png" alt="laughing's   blog" class="logo"> <span class="site-name">laughing's   blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      目录
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Vue.js/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue.js
+</a></li><li class="dropdown-item"><!----> <a href="/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Spring Boot/" class="nav-link"><i class="iconfont undefined"></i>
+  Spring Boot
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Docker/" class="nav-link"><i class="iconfont undefined"></i>
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Dubbo/" class="nav-link"><i class="iconfont undefined"></i>
+  Dubbo
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Git/" class="nav-link"><i class="iconfont undefined"></i>
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Hibernate/" class="nav-link"><i class="iconfont undefined"></i>
+  Hibernate
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Nexus/" class="nav-link"><i class="iconfont undefined"></i>
+  Nexus
+</a></li><li class="dropdown-item"><!----> <a href="/categories/系统建设/" class="nav-link"><i class="iconfont undefined"></i>
+  系统建设
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Spring Cloud/" class="nav-link"><i class="iconfont undefined"></i>
+  Spring Cloud
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Wechat小程序/" class="nav-link"><i class="iconfont undefined"></i>
+  Wechat小程序
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  分类
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link"><i class="iconfont reco-qq"></i>
+  QQ:619426619
+</a></li><li class="dropdown-item"><!----> <a href="/views/61421.html" class="nav-link"><i class="iconfont reco-wechat"></i>
+  WeChat
+</a></li><li class="dropdown-item"><!----> <a href="/views/JavaScript/.html" class="nav-link"><i class="iconfont reco-zhihu"></i>
+  Zhihu
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-5df996d9></div> <aside class="sidebar" data-v-5df996d9><div class="personal-info-wrapper" data-v-386e0692><img src="/head.png" alt="author-avatar" class="personal-img" data-v-386e0692> <h3 class="name" data-v-386e0692>
+    laughing
+  </h3> <div class="num" data-v-386e0692><div data-v-386e0692><h3 data-v-386e0692>36</h3> <h6 data-v-386e0692>Article</h6></div> <div data-v-386e0692><h3 data-v-386e0692>12</h3> <h6 data-v-386e0692>Tag</h6></div></div> <hr data-v-386e0692></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      目录
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Vue.js/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue.js
+</a></li><li class="dropdown-item"><!----> <a href="/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Spring Boot/" class="nav-link"><i class="iconfont undefined"></i>
+  Spring Boot
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Docker/" class="nav-link"><i class="iconfont undefined"></i>
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Dubbo/" class="nav-link"><i class="iconfont undefined"></i>
+  Dubbo
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Git/" class="nav-link"><i class="iconfont undefined"></i>
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Hibernate/" class="nav-link"><i class="iconfont undefined"></i>
+  Hibernate
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Nexus/" class="nav-link"><i class="iconfont undefined"></i>
+  Nexus
+</a></li><li class="dropdown-item"><!----> <a href="/categories/系统建设/" class="nav-link"><i class="iconfont undefined"></i>
+  系统建设
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Spring Cloud/" class="nav-link"><i class="iconfont undefined"></i>
+  Spring Cloud
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Wechat小程序/" class="nav-link"><i class="iconfont undefined"></i>
+  Wechat小程序
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  分类
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link"><i class="iconfont reco-qq"></i>
+  QQ:619426619
+</a></li><li class="dropdown-item"><!----> <a href="/views/61421.html" class="nav-link"><i class="iconfont reco-wechat"></i>
+  WeChat
+</a></li><li class="dropdown-item"><!----> <a href="/views/JavaScript/.html" class="nav-link"><i class="iconfont reco-zhihu"></i>
+  Zhihu
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>一、ES6学习笔记</span> <!----></p> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-1808498d data-v-5df996d9><h3 class="title" style="display:none;" data-v-1808498d data-v-1808498d>一、ES6学习笔记</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-1808498d data-v-1808498d><input type="password" value="" data-v-1808498d> <span data-v-1808498d>Konck! Knock!</span> <button data-v-1808498d>OK</button></label> <div class="footer" style="display:none;" data-v-1808498d data-v-1808498d><span data-v-1808498d><i class="iconfont reco-theme" data-v-1808498d></i> <a target="blank" href="https://vuepress.recoluan.com" data-v-1808498d>vuepress</a></span> <span data-v-1808498d><i class="iconfont reco-copyright" data-v-1808498d></i> <a data-v-1808498d><span data-v-1808498d>laughing</span>
+            
+          <span data-v-1808498d>2019 - </span>
+          2020
+        </a></span></div></div> <div data-v-5df996d9><main class="page"><div class="page-title" style="display:none;"><h1>一、ES6学习笔记</h1> <hr> <div data-v-dd8fe46e><i class="iconfont reco-account" data-v-dd8fe46e><span data-v-dd8fe46e>laughing</span></i> <i class="iconfont reco-date" data-v-dd8fe46e><span data-v-dd8fe46e>2019-10-01 08:00:00</span></i> <!----> <i class="iconfont reco-tag tags" data-v-dd8fe46e><span class="tag-item" data-v-dd8fe46e>
+      Vue.js
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><p><img src="/assets/img/ES6.7f173db6.png" alt="es6"><br>
+    ES6，全称 ECMAScript 6.0，是 JavaScript 的一个版本标准,后来就代指ES2015+以后的版本。它虽然是一个标准，但ES6添加了许多新的语法特性。<br></p> <ul><li><strong>1、兼容性与新特性</strong><br>
+    各大浏览器基本上都支持 ES6 ，IE7~11 基本不支持 ES6，chrome、firefox、Node.js、移动端可用。<br> <strong>为解决兼容问题可使用Bebal</strong>，是一种提前编译的方式，Bebal转码就是将es6代码转化为es5代码的包，用于一些不支持es6的场景，让低版本浏览器看得懂。<br>
+    我们主要看ES6新增的语法糖，语法特性。比如新的变量、函数用法、promise、generator、模块化等<br></li> <li><strong>2、let 与 const</strong><br> <strong>let 是在代码块内有效，var 是在全局范围内有效</strong><br> <strong>let 只能声明一次 var 可以声明多次</strong><br> <strong>let 不存在变量提升 需要先定义，不然会报错</strong><br></li></ul> <div class="language- extra-class"><pre><code>console.log(a);  //ReferenceError: a is not defined
+let a = &quot;apple&quot;;
+ 
+console.log(b);  //undefined
+var b = &quot;banana&quot;;
+
+let a = 'xxx'
+ a = 'yyy' //重新赋值
+ 
+ {
+   let a = 0;
+   var b = 1;
+ }
+ a  // ReferenceError: a is not defined
+ b  // 1  解决计数器困境
+</code></pre></div><p>    const就相当于static final吧，<strong>不能重复声明</strong>。<br></p> <div class="language- extra-class"><pre><code>const PI = &quot;3.1415926&quot;;
+</code></pre></div><ul><li><strong>3、箭头函数</strong><br>
+    箭头函数就是一种函数的简写，只需记住两点。<br> <strong>如果只有一个参数，（ ）可以省略</strong><br> <strong>如果只有一个return，{ }可省略</strong><br></li></ul> <div class="language- extra-class"><pre><code>let show = function () {
+
+};
+let show = () =&gt; {
+
+};
+
+let show = function (a,b) =&gt; {
+    alert(a+b);
+};    
+let show = (a,b){
+    alert(a+b)
+};
+
+//简写：如果只有一个参数，（）可以省略
+let show = function (a) {
+    return a*a
+};
+let show = a =&gt; {
+    return a*a
+};
+//如果只有一个return，{}可省略
+let show = a =&gt; a*a
+</code></pre></div><ul><li><strong>4、函数参数</strong><br>
+    函数参数扩展,<strong>不定参数</strong>。args必须是最后一个参数<br></li></ul> <div class="language- extra-class"><pre><code>let show = function (a,b,c ...args){
+    alert(args);
+}
+// 数组中 可展开数组
+let show = function (a,b,c){
+    alert(a);
+    alert(b);
+    alert(c);
+}    
+show (1,2,3);
+
+let arr = [1,2,3];
+show(...arr);
+</code></pre></div><p><strong>默认参数，在函数不传参数时，可加一个默认值。</strong><br></p> <div class="language- extra-class"><pre><code>let show = function (a,b =5,c=6){
+        alert(a，b，c);
+}  
+show(1,7); // 可覆盖默认值
+</code></pre></div><ul><li><strong>5、解构赋值</strong><br>
+    赋值时，左右结构保持一致，且必须首次初始化赋值。<br></li></ul> <div class="language- extra-class"><pre><code>let [a, b, c] = [1, 2, 3];
+let {a,b,c} = {a:1,b:2,c:3}
+//注意json合法写法
+let [{a,b},[n1,n2,n3],str] = [{a:1,b:2},[1,2,3].'str']
+let [json,arr,str] = [{a:1,b:2},[1,2,3].'str']
+
+let [a, , b] = [1, 2, 3];
+// a = 1
+// b = 3
+</code></pre></div><ul><li><strong>6、数组</strong><br> <strong>map映射方法</strong></li></ul> <div class="language- extra-class"><pre><code>[1,2,3,4,5]
+[a,b,c,d,e]
+let arr = [12,5,8];  //12,5,5
+let a = arr.map(a =&gt; a*2)；  //24，10，10
+</code></pre></div><p><strong>reduce汇总方法</strong></p> <div class="language- extra-class"><pre><code>let arr = [1,2,3,4,5];
+arr.reduce(function(tmp,item,index){
+
+});
+</code></pre></div><p><strong>filter过滤方法</strong></p> <div class="language- extra-class"><pre><code>let arr = [1,2,3,4,5,6];
+let result = arr.filter(item =&gt; item%3==0); // 3,6
+</code></pre></div><p><strong>forEach迭代方法</strong></p> <div class="language- extra-class"><pre><code>let arr = [1,2,3,4,5,6];
+let result = arr.foreach(item =&gt; {
+    alert(item);
+});
+</code></pre></div><ul><li><strong>7、字符串</strong><br>
+    两个新的方法<br></li></ul> <div class="language- extra-class"><pre><code>let str = &quot;xasdafaw&quot;
+str.startwith(&quot;x&quot;);  //ture
+str.endwith(&quot;w&quot;);  //false  比如判断扩展名
+</code></pre></div><p>    字符串模板<br></p> <div class="language- extra-class"><pre><code>let x = &quot;b&quot;;
+let str = `a${x}c` \\ abc
+</code></pre></div><ul><li><strong>8、json</strong><br>
+    JSON对象<br></li></ul> <div class="language- extra-class"><pre><code>let json = {a:1,b:2};
+json.stringify  //转字符串
+let str = '{&quot;a&quot;:1,&quot;b&quot;:2}'
+let json = JSON.parse(str) //转json
+ES6提供简写的方式
+let str = {a:a,b:b}; // key和value一致
+let str = {a,b};
+</code></pre></div><ul><li><strong>9、面向对象</strong><br></li></ul> <div class="language- extra-class"><pre><code>class User{         // 类似于java
+    constructor(name,age){ //构造器
+        this.name=name;
+        this.age=age;
+    }
+    showName(){         //构造方法
+        return this.name;
+    }
+}
+
+let user1 = User(&quot;xxx&quot;,&quot;23&quot;);
+user1.showName();
+//  继  承
+class VipUser extends User{
+    constructor(name,age,level){ //构造器
+        super(name,age); //执行父类构造函数
+        this.level=level;
+    }    
+    showLevel(){         //构造方法
+        return this.level;
+    }        
+}
+</code></pre></div><ul><li><strong>10、promise</strong><br>
+    Promise 是一个对象，从它可以获取异步操作的消息。可了解fetch方法解决ajax回调地狱的文章。<br></li></ul> <div class="language- extra-class"><pre><code>// Promise 对象
+let p = new promise(function (resolve,reject){ 
+      //resolve成功 reject失败
+
+// ajax 原来的写法
+$(&quot;#ajaxTest&quot;).click(function () {
+  $.ajax({
+    url: &quot;/ajax_test/&quot;,
+    type: &quot;POST&quot;,
+    data: {username: &quot;laughing&quot;, password: 123456},
+    success: function (data) {
+      resolve(data)；
+    }，
+    error:(err){
+      reject(err);
+    }
+  })
+})
+// Promise
+ p.then(function(value) {
+  // success
+ }, function(value) {
+  // failure
+ });
+
+ }) 
+</code></pre></div><p>    当有两个Promise对象时，就可解决回调地狱的问题。<br></p> <div class="language- extra-class"><pre><code>// Promise 对象 等两个异步操作都执行完。
+let p1 = new promise(function (resolve,reject){ }
+let p2 = new promise(function (resolve,reject){ }
+
+promise.all([p1,p2]).then(function(arr) {
+    // success 全部成功
+    let [res1,res2] = arr;
+ }, function(value) {
+   // failure 至少一个失败
+ });
+ }) 
+ 
+ promise.race()  // 竞争 读第一个成功的异步请求
+ 
+ 
+ // axios支持的promise
+   axios.all([getUserAccount(), getUserPermissions()])
+     .then(axios.spread(function (acct, perms) {
+       // Both requests are now complete
+     }));     
+</code></pre></div><ul><li><strong>11、generator 生成器</strong><br></li></ul> <p>    generator可以通过 yield 关键字，把函数的执行流挂起。可等待异步操作而挂起。<br></p> <div class="language- extra-class"><pre><code>function * show(){
+    alert('a');
+    yield;  // 放弃执行
+    alert('b');
+}
+
+let genObj = show();
+genObj.next();  // a
+genObj.next();  // b
+</code></pre></div><ul><li><strong>持续更新中</strong><br></li></ul> <p>     本人授权<a href="http://rightknights.com" target="_blank" rel="noopener noreferrer">维权骑士<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>对我发布文章的版权行为进行追究与维权。未经本人许可，不可擅自转载或用于其他商业用途。</p></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----></main> <!----> <div style="display:none;" data-v-5df996d9 data-v-5df996d9><div class="comments-wrapper" data-v-5df996d9><!----></div></div></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-a81d141e data-v-a81d141e><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-a81d141e><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-a81d141e></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-a81d141e></path></svg></div></div></div>
+    <script src="/assets/js/app.5370373b.js" defer></script><script src="/assets/js/3.9dfbd713.js" defer></script><script src="/assets/js/1.b0fc45b7.js" defer></script><script src="/assets/js/29.2518e15f.js" defer></script>
+  </body>
+</html>

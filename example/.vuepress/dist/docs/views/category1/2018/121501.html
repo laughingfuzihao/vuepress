@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Linux 安装及配置 Nginx</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.dcd73214.css" as="style"><link rel="preload" href="/assets/js/app.d9d76bc0.js" as="script"><link rel="preload" href="/assets/js/2.168c7074.js" as="script"><link rel="preload" href="/assets/js/4.b6f85e39.js" as="script"><link rel="prefetch" href="/assets/js/3.898a846e.js"><link rel="prefetch" href="/assets/js/5.a758f575.js"><link rel="prefetch" href="/assets/js/6.d502326d.js"><link rel="prefetch" href="/assets/js/7.6c58769d.js"><link rel="prefetch" href="/assets/js/8.04ce1c5c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.dcd73214.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><p><img src="/assets/img/nginx_logo.50ecadac.jpg" alt="logo"><br>
+Nginx是一款轻量级的Web服务器、多用于实现反向代理，具有内存占用少，启动极快，高并发能力强等特点，在互联网项目中有着广泛的应用。<br>
+关于nginx的介绍详情见官方网站：<a href="http://nginx.org/en/" target="_blank" rel="noopener noreferrer">http://nginx.org/en/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <br>
+其余详细介绍会在以后补充，<strong>本文着重介绍在linux环境下nginx的安装以及配置。</strong><br><br> <strong>首先我们需要安装编译和库文件和安装PCRE</strong><br></p> <ul><li>1、安装编译和库文件</li></ul> <div class="language- extra-class"><pre><code>yum -y install make zlib zlib-devel gcc-c++ libtool  openssl openssl-devel
+</code></pre></div><ul><li>2、安装PCRE</li></ul> <div class="language- extra-class"><pre><code>wget http://downloads.sourceforge.net/project/pcre/pcre/8.35/pcre-8.35.tar.gz
+</code></pre></div><p>PCRE 作用是让 Nginx 支持 Rewrite 功能，安装好之后解压：</p> <div class="language- extra-class"><pre><code>   tar zxvf pcre-8.35.tar.gz
+</code></pre></div><ul><li><strong>3、nginx安装</strong><br>
+3.1、安装</li></ul> <div class="language- extra-class"><pre><code>wget -c https://nginx.org/download/nginx-1.11.6.tar.gz
+</code></pre></div><p>3.2、解压</p> <div class="language- extra-class"><pre><code>   tar zxvf nginx-1.11.6.tar.gz
+</code></pre></div><p><br>效果如图：
+<img src="/assets/img/nginx2.c4820b88.png" alt="效果1"><br>
+3.3、编译安装</p> <div class="language- extra-class"><pre><code>   ./configure --prefix=/usr/local/webserver/nginx --with-http_stub_status_module --with-http_ssl_module --with-pcre=/usr/nginx/pcre-8.35
+  
+   make
+  
+   make install
+</code></pre></div><p>这时候就安装成功了</p> <ul><li>4、查看版本 安装成功</li></ul> <div class="language- extra-class"><pre><code>/usr/local/webserver/nginx/sbin/nginx -v
+</code></pre></div><p><br>效果如图：
+<img src="/assets/img/nginx3.1a2f0d19.png" alt="效果1"><br>
+接下来可配置环境变量，稍后补充。</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d9d76bc0.js" defer></script><script src="/assets/js/2.168c7074.js" defer></script><script src="/assets/js/4.b6f85e39.js" defer></script>
+  </body>
+</html>
