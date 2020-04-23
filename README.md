@@ -1,14 +1,7 @@
-<p align="center"><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img width="150" src="https://i.loli.net/2020/01/13/TPKA1wp6s4ufSm2.png" alt="Vue logo"></a></p>
-
-<p align="center">
-<img src="https://img.shields.io/badge/leancloud--storage-3.13.0-orange.svg">
-<img src="https://img.shields.io/badge/valine-1.3.6-blue.svg">
-<img src="https://img.shields.io/badge/vue--click--outside-1.0.7-blue.svg">
-
-</p>
 
 ## Introduce
 
+根据[vuepress-doc](https://vuepress.recoluan.com)建立的个人博客。
 1. 这是一个vuepress主题，旨在添加博客所需的分类、标签墙、分页、评论等功能；
 2. 主题追求极简，根据 vuepress 的默认主题修改而成，官方的主题配置仍然适用；
 3. 效果：[午后南杂](https://www.recoluan.com) 
@@ -60,17 +53,7 @@ yarn build
 
 ## Remind
 
-**首页新增 “华为” 相关文案，请允许我以这样的方式支持 “华为”。**
 
-## Preview
-
-![size.png](https://i.loli.net/2020/01/13/nCbXp13lRG2TNeD.png)
-
-![style.png](https://i.loli.net/2020/01/13/ke1VirShQRLnEd7.png)
-
-![dark.png](https://i.loli.net/2020/01/13/Lj6XbwdmDFCYH9k.png)
-
-![home.png](https://i.loli.net/2020/01/13/nra3kbYSlxojmw4.png)
 
 ## Contributors
 
