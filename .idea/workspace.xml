@@ -1,12 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7fb3e2e-d088-4bdb-b498-b3d4bf266041" name="Default Changelist" comment="version1.0.1" />
+    <list default="true" id="e7fb3e2e-d088-4bdb-b498-b3d4bf266041" name="Default Changelist" comment="version1.0.1">
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Bootstrap/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Bootstrap/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Bootstrap/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Bootstrap/bootstrap.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/JavaScript/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/JavaScript/js.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Spring/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Spring/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Spring/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Spring/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Spring/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Spring/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Spring/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Spring/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Spring/spring.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Spring/spring1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Spring/springweb.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Vue/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Vue/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Vue/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Vue/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Vue/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Vue/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Vue/cli.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/Vue/r.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/log4j/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/log4j/log.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/maven/m2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/node/npm.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/node/ns.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/webservice/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/webservice/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/webservice/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/docs/views/webservice/webservice.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/css/0.styles.02c4e9f6.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/1.b0fc45b7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/10.828f68d4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/11.cb5a1cbf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/12.7bbad55f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/13.ddf1af3b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/14.50d7c8d4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/15.5ee10fdc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/16.4c2c7c01.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/17.34a4aea5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/18.aab62c32.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/19.3f8fc721.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/20.96139246.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/21.e458021a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/22.7fb123a0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/23.51da28ea.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/24.65c2396e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/25.a3f9cedc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/26.3c5f5a98.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/27.a6e8b3b8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/28.af46094a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/29.2518e15f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/3.9dfbd713.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/30.5056206b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/31.7af4c5a4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/32.e649c132.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/33.85bc8594.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/34.bff84077.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/35.949f3b6d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/36.165e79ea.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/37.4cc933d6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/38.f2eeb7ed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/39.d444da3e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/4.107d77f1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/40.5719db48.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/41.2778e40e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/42.b3e933bc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/43.442644a4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/44.0d413994.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/45.0f7a775b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/46.d8b34df6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/47.4ca28d95.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/48.b3134363.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/5.c2006030.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/6.6ea098e1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/7.457fa98e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/8.2ec5f873.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/9.b445b420.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/assets/js/app.5370373b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/categories/Docker/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/categories/Docker/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/categories/Dubbo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/categories/Dubbo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/categories/Git/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/categories/Git/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/categories/Hibernate/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/categories/Hibernate/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/categories/JavaScript/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/categories/JavaScript/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/categories/Nexus/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/categories/Nexus/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/categories/Nginx/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/categories/Nginx/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/categories/Spring Boot/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/categories/Spring Boot/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/categories/Spring Cloud/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/categories/Spring Cloud/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/categories/Vue.js/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/categories/Vue.js/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/categories/Wechat小程序/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/categories/Wechat小程序/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/categories/系统建设/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/categories/系统建设/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/tag/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/tag/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/tags/Dubbo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/tags/Dubbo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/tags/Git/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/tags/Git/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/tags/JavaScript/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/tags/JavaScript/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/tags/Linux/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/tags/Linux/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/tags/Nexus/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/tags/Nexus/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/tags/Nginx/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/tags/Nginx/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/tags/Office Automation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/tags/Office Automation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/tags/Spring Boot/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/tags/Spring Boot/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/tags/Spring Cloud/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/tags/Spring Cloud/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/tags/Vue.js/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/tags/Vue.js/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/tags/Wechat小程序/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/tags/Wechat小程序/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/tags/框架/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/tags/框架/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/timeline/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/timeline/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/61421.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/61421.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/JavaScript/axios.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/JavaScript/axios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/JavaScript/checkbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/JavaScript/checkbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/JavaScript/cors.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/JavaScript/cors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/JavaScript/es6.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/JavaScript/es6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/Springboot/Spring Data Jpa.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/Springboot/Spring Data Jpa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/Springboot/mybatis.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/Springboot/mybatis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/Springboot/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/Springboot/page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/Springboot/springboot.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/Springboot/springboot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/Springboot/springboot1.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/Springboot/springboot1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/Springboot/springbootbanner.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/Springboot/springbootbanner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/Springboot/springemail.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/Springboot/springemail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/Springboot/springtime.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/Springboot/springtime.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/Springboot/swagger.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/Springboot/swagger.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/Vue/21483.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/Vue/21483.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/docker/docker.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/docker/docker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/dubbo/dubbo.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/dubbo/dubbo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/git/git1.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/git/git1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/git/gitleb.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/git/gitleb.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/hibernate/2020/hibernate.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/hibernate/2020/hibernate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/nexus/nexus.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/nexus/nexus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/nginx/2020/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/nginx/2020/1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/nginx/2020/gzip.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/nginx/2020/gzip.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/nginx/2020/nginx_vue.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/nginx/2020/nginx_vue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/nginx/2020/tomcat.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/nginx/2020/tomcat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/oa/15231.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/oa/15231.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/springcloud/Feign.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/springcloud/Feign.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/springcloud/api.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/springcloud/api.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/springcloud/apifilter.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/springcloud/apifilter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/springcloud/consumer.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/springcloud/consumer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/springcloud/eureka.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/springcloud/eureka.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/springcloud/fbs.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/springcloud/fbs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/springcloud/pom.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/springcloud/pom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/springcloud/provider.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/springcloud/provider.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/springcloud/rongduan.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/springcloud/rongduan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/springcloud/rongduanjk.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/springcloud/rongduanjk.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/docs/public/views/wechat/826/61421.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/docs/public/views/wechat/826/61421.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -33,36 +186,49 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\Users\Administrator\.m2\repository" />
+        <option name="mavenHome" value="D:/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1Zy4KYVe2IxScuk52srEFfkRx7V" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/example/docs/views/node" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\vuepress-develop\example\docs\views\Springboot" />
-      <recent name="D:\vuepress-develop\example\docs\views\nexus" />
-      <recent name="D:\vuepress-develop\example\docs\views\git" />
-      <recent name="D:\vuepress-develop\example\docs\views\springcloud" />
-      <recent name="D:\vuepress-develop\example\docs\views\dubbo" />
+      <recent name="D:\laughing-code\vuepress\example\docs\views\node" />
+      <recent name="D:\laughing-code\vuepress\example\docs\views\Vue" />
+      <recent name="D:\laughing-code\vuepress\example\docs\views\v" />
+      <recent name="D:\laughing-code\vuepress\example\docs\views\JavaScript" />
+      <recent name="D:\laughing-code\vuepress\example\docs\views\Servlet" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\laughing-code\vuepress\example\docs\views\springsecurity" />
+      <recent name="D:\laughing-code\vuepress\example\docs\views" />
+      <recent name="D:\laughing-code\vuepress\example\docs\views\Springboot" />
+      <recent name="D:\laughing-code\vuepress\example\docs\views\database" />
       <recent name="D:\vuepress-develop\example\docs\views\Spring" />
-      <recent name="D:\vuepress-develop\example\docs\views\Springboot" />
-      <recent name="D:\vuepress-develop\example\docs\views\JavaScript" />
-      <recent name="D:\vuepress-develop\example\docs\views" />
-      <recent name="D:\vuepress-develop\example\docs\views\Vue" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -144,7 +310,28 @@
       <workItem from="1587619345838" duration="583000" />
       <workItem from="1587619954006" duration="512000" />
       <workItem from="1587620809394" duration="166000" />
-      <workItem from="1587635096640" duration="495000" />
+      <workItem from="1587635096640" duration="881000" />
+      <workItem from="1587690993432" duration="124000" />
+      <workItem from="1587691266707" duration="57000" />
+      <workItem from="1587691907653" duration="38000" />
+      <workItem from="1589955615579" duration="11728000" />
+      <workItem from="1590025778750" duration="14000" />
+      <workItem from="1590025831223" duration="8857000" />
+      <workItem from="1590046216455" duration="4584000" />
+      <workItem from="1590110155925" duration="16890000" />
+      <workItem from="1590369205497" duration="20000" />
+      <workItem from="1590371707944" duration="3376000" />
+      <workItem from="1590387998405" duration="1252000" />
+      <workItem from="1590389610715" duration="3480000" />
+      <workItem from="1590455399099" duration="13526000" />
+      <workItem from="1590541160934" duration="4000" />
+      <workItem from="1590717642124" duration="11709000" />
+      <workItem from="1590974486525" duration="628000" />
+      <workItem from="1590976427144" duration="12542000" />
+      <workItem from="1591063304523" duration="12000" />
+      <workItem from="1591085716405" duration="1570000" />
+      <workItem from="1591144401354" duration="9103000" />
+      <workItem from="1591232399682" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="version1.0.1">
       <created>1587635231828</created>
@@ -153,7 +340,21 @@
       <option name="project" value="LOCAL" />
       <updated>1587635231828</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="version1.0.1">
+      <created>1587635668589</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587635668589</updated>
+    </task>
+    <task id="LOCAL-00003" summary="version1.0.2">
+      <created>1589959358769</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589959358769</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +431,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="version1.0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="version1.0.1" />
+    <MESSAGE value="version1.0.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="version1.0.2" />
   </component>
 </project>
