@@ -2,9 +2,9 @@
 title: jenkins服务搭建
 date: 2020-05-22
 tags:
- - jenkins
+ - 工具使用
 categories:
- - jenkins
+ - 工具使用
 ---
 
 &nbsp; &nbsp;Jenkins用Java语言编写，可在Tomcat等流行的servlet容器中运行，也可独立运行。通常与版本管理工具(SCM)、构建工具结合使用。常用的版本控制工具有SVN、GIT，构建工具有Maven、Ant、Gradle。

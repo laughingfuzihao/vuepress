@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>三、Spring Cloud Ribbon消费者 | laughing&#39;s   blog</title>
+    <title>五、负载均衡 Ribbon | laughing&#39;s   blog</title>
     <meta name="generator" content="VuePress 1.4.1">
     <link rel="icon" href="/favicon.ico">
     <meta name="description" content="Programming  knowledge   sharing .">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-    <link rel="preload" href="/assets/css/0.styles.eb3c6bcb.css" as="style"><link rel="preload" href="/assets/js/app.6f2ff4bc.js" as="script"><link rel="preload" href="/assets/js/3.f4379133.js" as="script"><link rel="preload" href="/assets/js/1.6f2b014e.js" as="script"><link rel="preload" href="/assets/js/16.8f676af2.js" as="script"><link rel="prefetch" href="/assets/js/10.c7e6229a.js"><link rel="prefetch" href="/assets/js/11.ca9d6317.js"><link rel="prefetch" href="/assets/js/12.73430c90.js"><link rel="prefetch" href="/assets/js/13.73c883d7.js"><link rel="prefetch" href="/assets/js/14.1755aecb.js"><link rel="prefetch" href="/assets/js/15.aebc0f1d.js"><link rel="prefetch" href="/assets/js/17.562e8239.js"><link rel="prefetch" href="/assets/js/18.42e69003.js"><link rel="prefetch" href="/assets/js/19.a4f0d74a.js"><link rel="prefetch" href="/assets/js/20.e65ec6d3.js"><link rel="prefetch" href="/assets/js/21.30199114.js"><link rel="prefetch" href="/assets/js/22.ebd33337.js"><link rel="prefetch" href="/assets/js/23.75d81855.js"><link rel="prefetch" href="/assets/js/24.b2761d2b.js"><link rel="prefetch" href="/assets/js/25.3cfe2255.js"><link rel="prefetch" href="/assets/js/26.487e24eb.js"><link rel="prefetch" href="/assets/js/27.b62cb0c8.js"><link rel="prefetch" href="/assets/js/28.1bf618c5.js"><link rel="prefetch" href="/assets/js/29.e925dd06.js"><link rel="prefetch" href="/assets/js/30.27891f6a.js"><link rel="prefetch" href="/assets/js/31.b2ba4f26.js"><link rel="prefetch" href="/assets/js/32.78532ab1.js"><link rel="prefetch" href="/assets/js/33.22620e5b.js"><link rel="prefetch" href="/assets/js/34.469e6831.js"><link rel="prefetch" href="/assets/js/35.e5428397.js"><link rel="prefetch" href="/assets/js/36.2ac3b741.js"><link rel="prefetch" href="/assets/js/37.4af43422.js"><link rel="prefetch" href="/assets/js/38.41b0c52f.js"><link rel="prefetch" href="/assets/js/39.f87d53da.js"><link rel="prefetch" href="/assets/js/4.43f217fd.js"><link rel="prefetch" href="/assets/js/40.2fd2ac79.js"><link rel="prefetch" href="/assets/js/41.828f40f7.js"><link rel="prefetch" href="/assets/js/42.861ea19e.js"><link rel="prefetch" href="/assets/js/43.522458f4.js"><link rel="prefetch" href="/assets/js/44.d3bdd642.js"><link rel="prefetch" href="/assets/js/45.2914afa8.js"><link rel="prefetch" href="/assets/js/46.d078d9c8.js"><link rel="prefetch" href="/assets/js/47.4bb78a06.js"><link rel="prefetch" href="/assets/js/48.c13edf99.js"><link rel="prefetch" href="/assets/js/49.32c2d45a.js"><link rel="prefetch" href="/assets/js/5.4a1cb454.js"><link rel="prefetch" href="/assets/js/50.c21acefd.js"><link rel="prefetch" href="/assets/js/51.48895c48.js"><link rel="prefetch" href="/assets/js/52.52fd5a43.js"><link rel="prefetch" href="/assets/js/53.7f2f4c38.js"><link rel="prefetch" href="/assets/js/54.489a1e81.js"><link rel="prefetch" href="/assets/js/55.8727dba8.js"><link rel="prefetch" href="/assets/js/56.cae1274f.js"><link rel="prefetch" href="/assets/js/57.600944e6.js"><link rel="prefetch" href="/assets/js/58.4f4795af.js"><link rel="prefetch" href="/assets/js/6.8b011465.js"><link rel="prefetch" href="/assets/js/7.97a8e7ea.js"><link rel="prefetch" href="/assets/js/8.547dc4e7.js"><link rel="prefetch" href="/assets/js/9.6f704e1f.js">
-    <link rel="stylesheet" href="/assets/css/0.styles.eb3c6bcb.css">
+    <link rel="preload" href="/assets/css/0.styles.404d56f7.css" as="style"><link rel="preload" href="/assets/js/app.2eda9d73.js" as="script"><link rel="preload" href="/assets/js/3.bc260df9.js" as="script"><link rel="preload" href="/assets/js/1.61c01148.js" as="script"><link rel="preload" href="/assets/js/11.14a973fb.js" as="script"><link rel="prefetch" href="/assets/js/10.12e3bcd4.js"><link rel="prefetch" href="/assets/js/100.e0241d2b.js"><link rel="prefetch" href="/assets/js/101.a8c4fd55.js"><link rel="prefetch" href="/assets/js/102.7cb431ee.js"><link rel="prefetch" href="/assets/js/103.3aea9818.js"><link rel="prefetch" href="/assets/js/12.6d98a7de.js"><link rel="prefetch" href="/assets/js/13.e7891e51.js"><link rel="prefetch" href="/assets/js/14.f5ee3bab.js"><link rel="prefetch" href="/assets/js/15.8a3c11e3.js"><link rel="prefetch" href="/assets/js/16.06b778cd.js"><link rel="prefetch" href="/assets/js/17.f69e42d9.js"><link rel="prefetch" href="/assets/js/18.77a368ac.js"><link rel="prefetch" href="/assets/js/19.6b9b1d81.js"><link rel="prefetch" href="/assets/js/20.dc932ace.js"><link rel="prefetch" href="/assets/js/21.9d420501.js"><link rel="prefetch" href="/assets/js/22.0e765918.js"><link rel="prefetch" href="/assets/js/23.3c3f1361.js"><link rel="prefetch" href="/assets/js/24.7660b876.js"><link rel="prefetch" href="/assets/js/25.3b67c6b4.js"><link rel="prefetch" href="/assets/js/26.e2378827.js"><link rel="prefetch" href="/assets/js/27.8711ccbf.js"><link rel="prefetch" href="/assets/js/28.61d615c6.js"><link rel="prefetch" href="/assets/js/29.d9446fc0.js"><link rel="prefetch" href="/assets/js/30.335b99d4.js"><link rel="prefetch" href="/assets/js/31.01dd9fdf.js"><link rel="prefetch" href="/assets/js/32.d7a98291.js"><link rel="prefetch" href="/assets/js/33.15b16693.js"><link rel="prefetch" href="/assets/js/34.bfc1f722.js"><link rel="prefetch" href="/assets/js/35.61c55d66.js"><link rel="prefetch" href="/assets/js/36.52a75837.js"><link rel="prefetch" href="/assets/js/37.290db36a.js"><link rel="prefetch" href="/assets/js/38.d4edb056.js"><link rel="prefetch" href="/assets/js/39.b56f3389.js"><link rel="prefetch" href="/assets/js/4.e0df7f75.js"><link rel="prefetch" href="/assets/js/40.3165c17c.js"><link rel="prefetch" href="/assets/js/41.4dba1616.js"><link rel="prefetch" href="/assets/js/42.3ac664a4.js"><link rel="prefetch" href="/assets/js/43.60cd545a.js"><link rel="prefetch" href="/assets/js/44.aec12e2d.js"><link rel="prefetch" href="/assets/js/45.d15ed017.js"><link rel="prefetch" href="/assets/js/46.bfc35dbc.js"><link rel="prefetch" href="/assets/js/47.2351bb16.js"><link rel="prefetch" href="/assets/js/48.4f226ba7.js"><link rel="prefetch" href="/assets/js/49.8e7d972e.js"><link rel="prefetch" href="/assets/js/5.5bd62d2c.js"><link rel="prefetch" href="/assets/js/50.758980c8.js"><link rel="prefetch" href="/assets/js/51.5eb490f4.js"><link rel="prefetch" href="/assets/js/52.39bb3812.js"><link rel="prefetch" href="/assets/js/53.14e94473.js"><link rel="prefetch" href="/assets/js/54.3fb8c3ef.js"><link rel="prefetch" href="/assets/js/55.5074cc82.js"><link rel="prefetch" href="/assets/js/56.fc10e5ea.js"><link rel="prefetch" href="/assets/js/57.20c6708c.js"><link rel="prefetch" href="/assets/js/58.b3613050.js"><link rel="prefetch" href="/assets/js/59.2ce2ad7f.js"><link rel="prefetch" href="/assets/js/6.80f373fb.js"><link rel="prefetch" href="/assets/js/60.bf8d678d.js"><link rel="prefetch" href="/assets/js/61.26ff9f41.js"><link rel="prefetch" href="/assets/js/62.19672588.js"><link rel="prefetch" href="/assets/js/63.706c9464.js"><link rel="prefetch" href="/assets/js/64.a2e5d8ff.js"><link rel="prefetch" href="/assets/js/65.f1ea87d3.js"><link rel="prefetch" href="/assets/js/66.e7cd8798.js"><link rel="prefetch" href="/assets/js/67.a012b8bc.js"><link rel="prefetch" href="/assets/js/68.66d9b519.js"><link rel="prefetch" href="/assets/js/69.15794985.js"><link rel="prefetch" href="/assets/js/7.7754f273.js"><link rel="prefetch" href="/assets/js/70.330e2bf5.js"><link rel="prefetch" href="/assets/js/71.20ec8b8c.js"><link rel="prefetch" href="/assets/js/72.2d1a561d.js"><link rel="prefetch" href="/assets/js/73.62f53586.js"><link rel="prefetch" href="/assets/js/74.50f599da.js"><link rel="prefetch" href="/assets/js/75.e1cfa314.js"><link rel="prefetch" href="/assets/js/76.911a472e.js"><link rel="prefetch" href="/assets/js/77.65820244.js"><link rel="prefetch" href="/assets/js/78.7288c7cb.js"><link rel="prefetch" href="/assets/js/79.0e61e068.js"><link rel="prefetch" href="/assets/js/8.64266548.js"><link rel="prefetch" href="/assets/js/80.9c8af266.js"><link rel="prefetch" href="/assets/js/81.54b48f43.js"><link rel="prefetch" href="/assets/js/82.16943b95.js"><link rel="prefetch" href="/assets/js/83.e1b2ab6f.js"><link rel="prefetch" href="/assets/js/84.bb5d7425.js"><link rel="prefetch" href="/assets/js/85.b8f34573.js"><link rel="prefetch" href="/assets/js/86.26b3845e.js"><link rel="prefetch" href="/assets/js/87.2a830dbc.js"><link rel="prefetch" href="/assets/js/88.e2e3afa0.js"><link rel="prefetch" href="/assets/js/89.f6ef66a7.js"><link rel="prefetch" href="/assets/js/9.6b0189b8.js"><link rel="prefetch" href="/assets/js/90.3dfc9b71.js"><link rel="prefetch" href="/assets/js/91.4a61c147.js"><link rel="prefetch" href="/assets/js/92.3e9ce2c9.js"><link rel="prefetch" href="/assets/js/93.d7cade5e.js"><link rel="prefetch" href="/assets/js/94.58687867.js"><link rel="prefetch" href="/assets/js/95.774246ee.js"><link rel="prefetch" href="/assets/js/96.c8e9abc1.js"><link rel="prefetch" href="/assets/js/97.baa4981f.js"><link rel="prefetch" href="/assets/js/98.037e6c48.js"><link rel="prefetch" href="/assets/js/99.f083e81b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.404d56f7.css">
   </head>
   <body>
     <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-38b059b6><div data-v-38b059b6><div id="loader-wrapper" class="loading-wrapper" data-v-4b73742e data-v-38b059b6 data-v-38b059b6><div class="loader-main" data-v-4b73742e><div data-v-4b73742e></div><div data-v-4b73742e></div><div data-v-4b73742e></div><div data-v-4b73742e></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-81666a48 data-v-38b059b6 data-v-38b059b6><h3 class="title" style="display:none;" data-v-81666a48 data-v-81666a48>laughing's   blog</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-81666a48 data-v-81666a48><input type="password" value="" data-v-81666a48> <span data-v-81666a48>Konck! Knock!</span> <button data-v-81666a48>OK</button></label> <div class="footer" style="display:none;" data-v-81666a48 data-v-81666a48><span data-v-81666a48><i class="iconfont reco-theme" data-v-81666a48></i> <a target="blank" href="https://vuepress.recoluan.com" data-v-81666a48>vuepress</a></span> <span data-v-81666a48><i class="iconfont reco-copyright" data-v-81666a48></i> <a data-v-81666a48><span data-v-81666a48>laughing</span>
@@ -22,38 +22,38 @@
       目录
     </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Vue.js/" class="nav-link"><i class="iconfont undefined"></i>
   Vue.js
-</a></li><li class="dropdown-item"><!----> <a href="/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
-  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Bootstrap/" class="nav-link"><i class="iconfont undefined"></i>
+  Bootstrap
+</a></li><li class="dropdown-item"><!----> <a href="/categories/SSM/" class="nav-link"><i class="iconfont undefined"></i>
+  SSM
 </a></li><li class="dropdown-item"><!----> <a href="/categories/Spring Boot/" class="nav-link"><i class="iconfont undefined"></i>
   Spring Boot
 </a></li><li class="dropdown-item"><!----> <a href="/categories/DataBase/" class="nav-link"><i class="iconfont undefined"></i>
   DataBase
-</a></li><li class="dropdown-item"><!----> <a href="/categories/Dubbo/" class="nav-link"><i class="iconfont undefined"></i>
-  Dubbo
 </a></li><li class="dropdown-item"><!----> <a href="/categories/Docker/" class="nav-link"><i class="iconfont undefined"></i>
   Docker
-</a></li><li class="dropdown-item"><!----> <a href="/categories/IDEA/" class="nav-link"><i class="iconfont undefined"></i>
-  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Dubbo/" class="nav-link"><i class="iconfont undefined"></i>
+  Dubbo
+</a></li><li class="dropdown-item"><!----> <a href="/categories/ElasticSearch/" class="nav-link"><i class="iconfont undefined"></i>
+  ElasticSearch
+</a></li><li class="dropdown-item"><!----> <a href="/categories/工具使用/" class="nav-link"><i class="iconfont undefined"></i>
+  工具使用
 </a></li><li class="dropdown-item"><!----> <a href="/categories/Hibernate/" class="nav-link"><i class="iconfont undefined"></i>
   Hibernate
-</a></li><li class="dropdown-item"><!----> <a href="/categories/Git/" class="nav-link"><i class="iconfont undefined"></i>
-  Git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/微服务/" class="nav-link"><i class="iconfont undefined"></i>
+  微服务
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Mybatis Plus/" class="nav-link"><i class="iconfont undefined"></i>
+  Mybatis Plus
 </a></li><li class="dropdown-item"><!----> <a href="/categories/Nginx/" class="nav-link"><i class="iconfont undefined"></i>
   Nginx
-</a></li><li class="dropdown-item"><!----> <a href="/categories/Nexus/" class="nav-link"><i class="iconfont undefined"></i>
-  Nexus
-</a></li><li class="dropdown-item"><!----> <a href="/categories/jenkins/" class="nav-link"><i class="iconfont undefined"></i>
-  jenkins
+</a></li><li class="dropdown-item"><!----> <a href="/categories/node.js/" class="nav-link"><i class="iconfont undefined"></i>
+  node.js
 </a></li><li class="dropdown-item"><!----> <a href="/categories/Spring Cloud/" class="nav-link"><i class="iconfont undefined"></i>
   Spring Cloud
-</a></li><li class="dropdown-item"><!----> <a href="/categories/系统建设/" class="nav-link"><i class="iconfont undefined"></i>
-  系统建设
 </a></li><li class="dropdown-item"><!----> <a href="/categories/Spring Security/" class="nav-link"><i class="iconfont undefined"></i>
   Spring Security
 </a></li><li class="dropdown-item"><!----> <a href="/categories/Wechat小程序/" class="nav-link"><i class="iconfont undefined"></i>
   Wechat小程序
-</a></li><li class="dropdown-item"><!----> <a href="/categories/Webservice/" class="nav-link"><i class="iconfont undefined"></i>
-  Webservice
 </a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
   分类
 </a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
@@ -64,48 +64,48 @@
   QQ:619426619
 </a></li><li class="dropdown-item"><!----> <a href="/views/61421.html" class="nav-link"><i class="iconfont reco-wechat"></i>
   WeChat
-</a></li><li class="dropdown-item"><!----> <a href="/views/springcloud/.html" class="nav-link"><i class="iconfont reco-zhihu"></i>
+</a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/laughing-yaoyao" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-zhihu"></i>
   Zhihu
-</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-38b059b6></div> <aside class="sidebar" data-v-38b059b6><div class="personal-info-wrapper" data-v-5deef46f><img src="/head.png" alt="author-avatar" class="personal-img" data-v-5deef46f> <h3 class="name" data-v-5deef46f>
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-38b059b6></div> <aside class="sidebar" data-v-38b059b6><div class="personal-info-wrapper" data-v-5deef46f><img src="/head.png" alt="author-avatar" class="personal-img" data-v-5deef46f> <h3 class="name" data-v-5deef46f>
     laughing
-  </h3> <div class="num" data-v-5deef46f><div data-v-5deef46f><h3 data-v-5deef46f>46</h3> <h6 data-v-5deef46f>Article</h6></div> <div data-v-5deef46f><h3 data-v-5deef46f>17</h3> <h6 data-v-5deef46f>Tag</h6></div></div> <hr data-v-5deef46f></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  </h3> <div class="num" data-v-5deef46f><div data-v-5deef46f><h3 data-v-5deef46f>89</h3> <h6 data-v-5deef46f>Article</h6></div> <div data-v-5deef46f><h3 data-v-5deef46f>17</h3> <h6 data-v-5deef46f>Tag</h6></div></div> <hr data-v-5deef46f></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
   Home
 </a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
       目录
     </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Vue.js/" class="nav-link"><i class="iconfont undefined"></i>
   Vue.js
-</a></li><li class="dropdown-item"><!----> <a href="/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
-  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Bootstrap/" class="nav-link"><i class="iconfont undefined"></i>
+  Bootstrap
+</a></li><li class="dropdown-item"><!----> <a href="/categories/SSM/" class="nav-link"><i class="iconfont undefined"></i>
+  SSM
 </a></li><li class="dropdown-item"><!----> <a href="/categories/Spring Boot/" class="nav-link"><i class="iconfont undefined"></i>
   Spring Boot
 </a></li><li class="dropdown-item"><!----> <a href="/categories/DataBase/" class="nav-link"><i class="iconfont undefined"></i>
   DataBase
-</a></li><li class="dropdown-item"><!----> <a href="/categories/Dubbo/" class="nav-link"><i class="iconfont undefined"></i>
-  Dubbo
 </a></li><li class="dropdown-item"><!----> <a href="/categories/Docker/" class="nav-link"><i class="iconfont undefined"></i>
   Docker
-</a></li><li class="dropdown-item"><!----> <a href="/categories/IDEA/" class="nav-link"><i class="iconfont undefined"></i>
-  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Dubbo/" class="nav-link"><i class="iconfont undefined"></i>
+  Dubbo
+</a></li><li class="dropdown-item"><!----> <a href="/categories/ElasticSearch/" class="nav-link"><i class="iconfont undefined"></i>
+  ElasticSearch
+</a></li><li class="dropdown-item"><!----> <a href="/categories/工具使用/" class="nav-link"><i class="iconfont undefined"></i>
+  工具使用
 </a></li><li class="dropdown-item"><!----> <a href="/categories/Hibernate/" class="nav-link"><i class="iconfont undefined"></i>
   Hibernate
-</a></li><li class="dropdown-item"><!----> <a href="/categories/Git/" class="nav-link"><i class="iconfont undefined"></i>
-  Git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/微服务/" class="nav-link"><i class="iconfont undefined"></i>
+  微服务
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Mybatis Plus/" class="nav-link"><i class="iconfont undefined"></i>
+  Mybatis Plus
 </a></li><li class="dropdown-item"><!----> <a href="/categories/Nginx/" class="nav-link"><i class="iconfont undefined"></i>
   Nginx
-</a></li><li class="dropdown-item"><!----> <a href="/categories/Nexus/" class="nav-link"><i class="iconfont undefined"></i>
-  Nexus
-</a></li><li class="dropdown-item"><!----> <a href="/categories/jenkins/" class="nav-link"><i class="iconfont undefined"></i>
-  jenkins
+</a></li><li class="dropdown-item"><!----> <a href="/categories/node.js/" class="nav-link"><i class="iconfont undefined"></i>
+  node.js
 </a></li><li class="dropdown-item"><!----> <a href="/categories/Spring Cloud/" class="nav-link"><i class="iconfont undefined"></i>
   Spring Cloud
-</a></li><li class="dropdown-item"><!----> <a href="/categories/系统建设/" class="nav-link"><i class="iconfont undefined"></i>
-  系统建设
 </a></li><li class="dropdown-item"><!----> <a href="/categories/Spring Security/" class="nav-link"><i class="iconfont undefined"></i>
   Spring Security
 </a></li><li class="dropdown-item"><!----> <a href="/categories/Wechat小程序/" class="nav-link"><i class="iconfont undefined"></i>
   Wechat小程序
-</a></li><li class="dropdown-item"><!----> <a href="/categories/Webservice/" class="nav-link"><i class="iconfont undefined"></i>
-  Webservice
 </a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
   分类
 </a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
@@ -116,74 +116,100 @@
   QQ:619426619
 </a></li><li class="dropdown-item"><!----> <a href="/views/61421.html" class="nav-link"><i class="iconfont reco-wechat"></i>
   WeChat
-</a></li><li class="dropdown-item"><!----> <a href="/views/springcloud/.html" class="nav-link"><i class="iconfont reco-zhihu"></i>
+</a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/laughing-yaoyao" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-zhihu"></i>
   Zhihu
-</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>三、Spring Cloud Ribbon消费者</span> <!----></p> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-81666a48 data-v-38b059b6><h3 class="title" style="display:none;" data-v-81666a48 data-v-81666a48>三、Spring Cloud Ribbon消费者</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-81666a48 data-v-81666a48><input type="password" value="" data-v-81666a48> <span data-v-81666a48>Konck! Knock!</span> <button data-v-81666a48>OK</button></label> <div class="footer" style="display:none;" data-v-81666a48 data-v-81666a48><span data-v-81666a48><i class="iconfont reco-theme" data-v-81666a48></i> <a target="blank" href="https://vuepress.recoluan.com" data-v-81666a48>vuepress</a></span> <span data-v-81666a48><i class="iconfont reco-copyright" data-v-81666a48></i> <a data-v-81666a48><span data-v-81666a48>laughing</span>
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>五、负载均衡 Ribbon</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/springcloud/consumer.html#一、服务的生产者与消费者" class="sidebar-link">一、服务的生产者与消费者</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/springcloud/consumer.html#二、生产者服务" class="sidebar-link">二、生产者服务</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/springcloud/consumer.html#pom依赖" class="sidebar-link">pom依赖</a></li><li class="sidebar-sub-header"><a href="/views/springcloud/consumer.html#enableeurekaclient" class="sidebar-link">@EnableEurekaClient</a></li><li class="sidebar-sub-header"><a href="/views/springcloud/consumer.html#yml配置" class="sidebar-link">yml配置</a></li><li class="sidebar-sub-header"><a href="/views/springcloud/consumer.html#服务" class="sidebar-link">服务</a></li></ul></li><li><a href="/views/springcloud/consumer.html#三、消费者直接调用" class="sidebar-link">三、消费者直接调用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/springcloud/consumer.html#pom依赖-2" class="sidebar-link">pom依赖</a></li><li class="sidebar-sub-header"><a href="/views/springcloud/consumer.html#yml配置-2" class="sidebar-link">yml配置</a></li><li class="sidebar-sub-header"><a href="/views/springcloud/consumer.html#enableeurekaclient-2" class="sidebar-link">@EnableEurekaClient</a></li><li class="sidebar-sub-header"><a href="/views/springcloud/consumer.html#resttemplate" class="sidebar-link">RestTemplate</a></li><li class="sidebar-sub-header"><a href="/views/springcloud/consumer.html#控制层" class="sidebar-link">控制层</a></li></ul></li><li><a href="/views/springcloud/consumer.html#四、ribbon负载均衡" class="sidebar-link">四、Ribbon负载均衡</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/springcloud/consumer.html#pom依赖增加" class="sidebar-link">pom依赖增加</a></li><li class="sidebar-sub-header"><a href="/views/springcloud/consumer.html#启动类" class="sidebar-link">启动类</a></li><li class="sidebar-sub-header"><a href="/views/springcloud/consumer.html#负载均衡" class="sidebar-link">负载均衡</a></li></ul></li><li><a href="/views/springcloud/consumer.html#五、提取公共类" class="sidebar-link">五、提取公共类</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/springcloud/consumer.html#六、ribbon负载规则" class="sidebar-link">六、Ribbon负载规则</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/springcloud/consumer.html#配置类" class="sidebar-link">配置类</a></li><li class="sidebar-sub-header"><a href="/views/springcloud/consumer.html#更改启动类" class="sidebar-link">更改启动类</a></li></ul></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-81666a48 data-v-38b059b6><h3 class="title" style="display:none;" data-v-81666a48 data-v-81666a48>五、负载均衡 Ribbon</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-81666a48 data-v-81666a48><input type="password" value="" data-v-81666a48> <span data-v-81666a48>Konck! Knock!</span> <button data-v-81666a48>OK</button></label> <div class="footer" style="display:none;" data-v-81666a48 data-v-81666a48><span data-v-81666a48><i class="iconfont reco-theme" data-v-81666a48></i> <a target="blank" href="https://vuepress.recoluan.com" data-v-81666a48>vuepress</a></span> <span data-v-81666a48><i class="iconfont reco-copyright" data-v-81666a48></i> <a data-v-81666a48><span data-v-81666a48>laughing</span>
             
           <span data-v-81666a48>2019 - </span>
           2020
-        </a></span></div></div> <div data-v-38b059b6><main class="page"><div class="page-title" style="display:none;"><h1>三、Spring Cloud Ribbon消费者</h1> <hr> <div data-v-17366d91><i class="iconfont reco-account" data-v-17366d91><span data-v-17366d91>laughing</span></i> <i class="iconfont reco-date" data-v-17366d91><span data-v-17366d91>2020-04-19 11:00:00</span></i> <!----> <i class="iconfont reco-tag tags" data-v-17366d91><span class="tag-item" data-v-17366d91>
+        </a></span></div></div> <div data-v-38b059b6><main class="page"><div class="page-title" style="display:none;"><h1>五、负载均衡 Ribbon</h1> <hr> <div data-v-17366d91><i class="iconfont reco-account" data-v-17366d91><span data-v-17366d91>laughing</span></i> <i class="iconfont reco-date" data-v-17366d91><span data-v-17366d91>2020-07-02 15:00:00</span></i> <!----> <i class="iconfont reco-tag tags" data-v-17366d91><span class="tag-item" data-v-17366d91>
       Spring Cloud
-    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><p>    Spring Cloud Ribbon是一个基于HTTP和TCP的客户端负载均衡工具，它基于Netflix Ribbon实现。
-通过Spring Cloud的封装，可以让我们轻松地将面向服务的REST模版请求自动转换成客户端负载均衡的服务调用。<br>
-       * 1、<strong>pom依赖</strong><br></p> <div class="language- extra-class"><pre><code>                   &lt;dependency&gt;
-                      &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
-                      &lt;artifactId&gt;spring-cloud-starter-netflix-eureka-server&lt;/artifactId&gt;
-                  &lt;/dependency&gt;
-                  &lt;dependency&gt;
-                      &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
-                      &lt;artifactId&gt;spring-cloud-starter-netflix-ribbon&lt;/artifactId&gt;
-                  &lt;/dependency&gt;
-</code></pre></div><p>    * 2、<strong>application.yml</strong><br></p> <div class="language- extra-class"><pre><code>          spring:
-            application:
-              name: spring-cloud-consumer-ribbon
-          
-            thymeleaf:
-              cache: false
-              prefix: classpath:/templates/
-              suffix: .html
-              encoding: UTF-8
-              servlet:
-                content-type: text/html
-              mode: HTML5
-          
-          
-          server:
-            port: 8011
-          
-          eureka:
-            client:
-              service-url:
-                defaultZone: http://localhost:8009/eureka/
-</code></pre></div><p>       * 3、<strong>启动类</strong><br><br> <img src="/assets/img/5.c4a26c76.jpg" alt="5"></p> <p>       * 4、<strong>负载均衡</strong><br>
-    注意@LoadBalanced注解实现的负载均衡效果  <br> <img src="/assets/img/8.40c64452.png" alt="8">
-    控制类<br></p> <div class="language- extra-class"><pre><code>          @RestController
-          public class RibbonController {
-          
-              @Autowired
-              private ProviderService providerService;
-          
-              @RequestMapping(value = &quot;message&quot;,method = RequestMethod.GET)
-              public String showMessage(String message) {
-                  return providerService.showMessage(message);
-              }
-          } 
-</code></pre></div><p>    ProviderService<br>
-    这里直接通过spring-cloud-provider进行调用，不用再关心provider在哪台机器哪个端口。并且
-实现了负载均衡<br></p> <div class="language- extra-class"><pre><code>          @Service
-          public class ProviderService {
-          
-              @Autowired
-              private RestTemplate restTemplate;
-          
-              public String showMessage(String message) {
-                  return restTemplate.getForObject(&quot;http://spring-cloud-provider/message?message=&quot; + message, String.class);
-              }
-          
-          
-          }
-</code></pre></div><p>    效果<br> <img src="/assets/img/9.57dabc76.png" alt="9"> <img src="/assets/img/10.de589e62.png" alt="10"> <img src="/assets/img/11.b2c10c47.png" alt="11">
-     本人授权<a href="http://rightknights.com" target="_blank" rel="noopener noreferrer">维权骑士<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>对我发布文章的版权行为进行追究与维权。未经本人许可，不可擅自转载或用于其他商业用途。</p></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">4/23/2020, 12:41:13 PM</span></div></footer> <!----></main> <!----> <div style="display:none;" data-v-38b059b6 data-v-38b059b6><div class="comments-wrapper" data-v-38b059b6><!----></div></div></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-a81d141e data-v-a81d141e><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-a81d141e><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-a81d141e></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-a81d141e></path></svg></div></div></div>
-    <script src="/assets/js/app.6f2ff4bc.js" defer></script><script src="/assets/js/3.f4379133.js" defer></script><script src="/assets/js/1.6f2b014e.js" defer></script><script src="/assets/js/16.8f676af2.js" defer></script>
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><div class="custom-block tip"><p class="custom-block-title">Sping boot</p> <p>Spring Cloud Ribbon是一个基于HTTP和TCP的客户端负载均衡工具，它基于Netflix Ribbon实现。
+通过Spring Cloud的封装，可以让我们轻松地将面向服务的REST模版请求自动转换成客户端负载均衡的服务调用。</p></div> <h2 id="一、服务的生产者与消费者"><a href="#一、服务的生产者与消费者" class="header-anchor">#</a> 一、服务的生产者与消费者</h2> <p>之前用springboot单应用时，Controller调用Service的，直接注入Service bean即可进行调用了。</p> <p>微服务之后，我们可能Controller和Service层都不在一个机器上面，就需要服务间的相互调用了。<br></p> <p>服务的生产者与消费者很好理解，就是谁调用谁的逻辑，被调用的服务为生产者，调用者为消费者。</p> <h2 id="二、生产者服务"><a href="#二、生产者服务" class="header-anchor">#</a> 二、生产者服务</h2> <p>搭建好eureka后，我们往里面注册一个服务提供者，他同时也是eureka的客户端。</p> <h3 id="pom依赖"><a href="#pom依赖" class="header-anchor">#</a> <strong>pom依赖</strong></h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-cloud-starter-netflix-eureka-client&lt;/artifactId&gt;
+    &lt;version&gt;2.2.3.RELEASE&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre></div><h3 id="enableeurekaclient"><a href="#enableeurekaclient" class="header-anchor">#</a> @EnableEurekaClient</h3> <p>开启@EnableEurekaClient</p> <h3 id="yml配置"><a href="#yml配置" class="header-anchor">#</a> yml配置</h3> <div class="language- extra-class"><pre class="language-text"><code>spring:
+  application:
+    name: spring-cloud-provider
+
+server:
+  port: 8011
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+</code></pre></div><h3 id="服务"><a href="#服务" class="header-anchor">#</a> 服务</h3> <p>写一个可以返回端口的控制层。</p> <div class="language- extra-class"><pre class="language-text"><code>@RestController
+public class ProviderController {
+    @Value(&quot;${server.port}&quot;)  //通过spring注入端口号
+    private String port;
+
+    @GetMapping(&quot;/provider&quot;)
+    public String client() {
+        return &quot;I am EurekaClientApplication, start by &quot; + port + &quot;port&quot;;
+    }
+}
+</code></pre></div><h2 id="三、消费者直接调用"><a href="#三、消费者直接调用" class="header-anchor">#</a> 三、消费者直接调用</h2> <h3 id="pom依赖-2"><a href="#pom依赖-2" class="header-anchor">#</a> pom依赖</h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-cloud-starter-netflix-eureka-client&lt;/artifactId&gt;
+    &lt;version&gt;2.2.3.RELEASE&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre></div><h3 id="yml配置-2"><a href="#yml配置-2" class="header-anchor">#</a> yml配置</h3> <div class="language- extra-class"><pre class="language-text"><code>spring:
+  application:
+    name: spring-cloud-consumer
+
+server:
+  port: 9090
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/  
+</code></pre></div><h3 id="enableeurekaclient-2"><a href="#enableeurekaclient-2" class="header-anchor">#</a> @EnableEurekaClient</h3> <p>开启@EnableEurekaClient</p> <h3 id="resttemplate"><a href="#resttemplate" class="header-anchor">#</a> RestTemplate</h3> <p>RestTemplate是Spring提供的用于访问Rest服务的客户端，RestTemplate提供了多种便捷访问远程Http服务的方法。我们需要编写一个RestTemplate 配置类。</p> <div class="language- extra-class"><pre class="language-text"><code>@Configuration
+public class RestTemplateConfiguration {
+    @Bean
+    @LoadBalanced
+    public RestTemplate getRestTemplate() {
+        return new RestTemplate();
+    }
+}
+
+</code></pre></div><p>@LoadBalanced使用了这个注解以后 ，会在 restTemplate 里面 通过 restTemplate.setInterceptors 放入 LoadBalancerInterceptor ，这个过滤器会在 请求远程成接口的时候 动态判断请求的域是不是 负载 负载均衡支付的服务的地址，如果是，那么就会代理 使用 这个负载均衡器 来调用。</p> <h3 id="控制层"><a href="#控制层" class="header-anchor">#</a> 控制层</h3> <div class="language- extra-class"><pre class="language-text"><code>@RestController
+public class ArticleController {
+    @Autowired
+    private RestTemplate restTemplate;
+    @GetMapping(&quot;/callprovider&quot;)
+    public String callProvider() {
+        return restTemplate.getForObject(&quot;http://SPRING-CLOUD-PROVIDER/provider&quot;, String.class);
+    }
+}
+
+</code></pre></div><p>生产、消费都已经注册进来了。</p> <p><img src="/assets/img/image-20200630134930519.9aa35020.png" alt="image-20200630134930519"></p> <p><img src="/assets/img/image-20200630135010280.03129a02.png" alt="image-20200630135010280"></p> <p>访问：</p> <p><img src="/assets/img/image-20200630140101683.9e7f702e.png" alt="image-20200630140101683"></p> <h2 id="四、ribbon负载均衡"><a href="#四、ribbon负载均衡" class="header-anchor">#</a> 四、Ribbon负载均衡</h2> <p>消费者我们就需要用到Ribbon了，在新版的Eureka中已经有了Ribbon的依赖。</p> <p><img src="/assets/img/21.50f8bfd8.png" alt="2"></p> <h3 id="pom依赖增加"><a href="#pom依赖增加" class="header-anchor">#</a> pom依赖增加</h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-cloud-starter-netflix-ribbon&lt;/artifactId&gt;
+    &lt;version&gt;2.2.3.RELEASE&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre></div><h3 id="启动类"><a href="#启动类" class="header-anchor">#</a> 启动类</h3> <p><img src="/assets/img/5.c4a26c76.jpg" alt="5"></p> <h3 id="负载均衡"><a href="#负载均衡" class="header-anchor">#</a> 负载均衡</h3> <p>注意@LoadBalanced注解实现的负载均衡效果  <br> <img src="/assets/img/8.40c64452.png" alt="8">
+这里直接通过spring-cloud-provider进行调用，不用再关心provider在哪台机器哪个端口。并且
+实现了负载均衡</p> <p><img src="/assets/img/9.57dabc76.png" alt="9"> <img src="/assets/img/10.de589e62.png" alt="10"> <img src="/assets/img/11.b2c10c47.png" alt="11"></p> <h2 id="五、提取公共类"><a href="#五、提取公共类" class="header-anchor">#</a> 五、提取公共类</h2> <p>在微服务架构中，可能有多个子项目用到公用的实体类、工具类等，为了避免重复，可以提取出来一个api-common的子项目。</p> <p><img src="/assets/img/25.1bcc10c6.png" alt="image-20200630174642187"></p> <p>api-common，一般可以加入糊涂工具包：</p> <p><img src="/assets/img/26.cd9329f4.png" alt="image-20200630174642187"></p> <div class="language- extra-class"><pre class="language-text"><code>cloud-api-commom mvn install
+</code></pre></div><p>其他子项目引用只需要：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;dependency&gt;
+    &lt;groupId&gt;com.laughing&lt;/groupId&gt;
+    &lt;artifactId&gt;cloud-api-commom&lt;/artifactId&gt;
+    &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre></div><h2 id="六、ribbon负载规则"><a href="#六、ribbon负载规则" class="header-anchor">#</a> 六、Ribbon负载规则</h2> <h3 id="配置类"><a href="#配置类" class="header-anchor">#</a> 配置类</h3> <p>自定义的负载均衡配置类不能放在 @componentScan 所扫描的当前包下及其子包下，否则我们自定义的这个配置类就会被所有的Ribbon客户端所共享，需要新建包写配置类。<br></p> <p>负载均衡器Ribbon中的IRule负责选择什么样的负载均衡算法,默认有七种，以随机为例。</p> <p><img src="/assets/img/image-20200702132200560.238cc166.png" alt="image-20200702132200560"></p> <div class="language- extra-class"><pre class="language-text"><code>@Configuration
+public class RibbonRule {
+    @Bean
+    public IRule Rule() {
+        /**
+         * 定义策略为随机。
+         */
+        return new RandomRule();
+    }
+}
+</code></pre></div><h3 id="更改启动类"><a href="#更改启动类" class="header-anchor">#</a> 更改启动类</h3> <p><img src="/assets/img/image-20200702132315501.eba6d29e.png" alt="image-20200702132315501"></p> <p>     本人授权<a href="http://rightknights.com" target="_blank" rel="noopener noreferrer">维权骑士<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>对我发布文章的版权行为进行追究与维权。未经本人许可，不可擅自转载或用于其他商业用途。</p></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----></main> <!----> <div style="display:none;" data-v-38b059b6 data-v-38b059b6><div class="comments-wrapper" data-v-38b059b6><!----></div></div></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-a81d141e data-v-a81d141e><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-a81d141e><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-a81d141e></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-a81d141e></path></svg></div></div></div>
+    <script src="/assets/js/app.2eda9d73.js" defer></script><script src="/assets/js/3.bc260df9.js" defer></script><script src="/assets/js/1.61c01148.js" defer></script><script src="/assets/js/11.14a973fb.js" defer></script>
   </body>
 </html>

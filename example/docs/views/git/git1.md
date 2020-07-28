@@ -2,9 +2,9 @@
 title: Git托管代码
 date: 2020-01-18 06:00:00
 tags:
- - Git
+ - 工具使用
 categories:
- - Git
+ - 工具使用
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;之前一直都是用SVN，用于微服务非常不方便，而Git是分布式的，现在学习使用Git。<br/> 
 &nbsp;&nbsp;&nbsp;&nbsp;   * 1、**安装**<br/> 

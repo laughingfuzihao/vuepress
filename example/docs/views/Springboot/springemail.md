@@ -1,13 +1,13 @@
 ---
-title: 七、Spring Boot邮件服务
-date: 2020-02-15 12:00:00
+title: 十五、Spring Boot邮件服务
+date: 2020-06-29 12:00:00
 tags:
  - Spring Boot
 categories:
  - Spring Boot
 ---
 
-   * 1、**pom依赖**<br/>  
+## 一、pom依赖  
 
     <dependencies>
     	<dependency> 
@@ -15,32 +15,31 @@ categories:
     	    <artifactId>spring-boot-starter-mail</artifactId>
     	</dependency> 
     </dependencies>
-    
-    
-   * 2、**邮箱配置**<br/>  
+
+
+​    
+
+## 二、邮箱配置  
 
     spring.mail.host=smtp.qq.com
     spring.mail.username=xxxxxx@qq.com
     spring.mail.password=xxxxxxx
     spring.mail.default-encoding=UTF-8
-    
-    
-    mail.fromMail.addr=xxxxxx@qq.com
-    
-   * 3、**mailService实现类**<br/>    
 
 
-    
+​    mail.fromMail.addr=xxxxxx@qq.com
+
+## 三、mailService实现类
+
     @Component
     public class MailServiceImpl implements MailService{
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
-
     @Autowired
     private JavaMailSender mailSender;
-
+    
     @Value("${mail.fromMail.addr}")
     private String from;
-
+    
     /**
      * 发送文本邮件
      * @param to
@@ -54,30 +53,26 @@ categories:
         message.setTo(to);
         message.setSubject(subject);
         message.setText(content);
-
+    
         try {
             mailSender.send(message);
             logger.info("简单邮件已经发送。");
         } catch (Exception e) {
             logger.error("发送简单邮件时发生异常！", e);
         }
-
+    
     }  
     }  
 
-    
-    
-   * 4、**配置文件形式**<br/>      
-    
-&nbsp;&nbsp;&nbsp;&nbsp;还加了个不停的发的定时任务，实测QQ发10封一样的会被屏蔽。。。<br>    
-    
+
+​    ## 四、配置文件形式
+
+&nbsp;&nbsp;&nbsp;&nbsp;还加了个不停的发的定时任务，实测QQ发10封一样的会被屏蔽。。。<br>
     @Component
     public class Send {
-    
-    
-        @Autowired
-        private MailService mailService;
-    
+            @Autowired
+            private MailService mailService;    
+        
         @Scheduled(cron= "*/10 * * * * ?")
         public void testHtmlMail() throws Exception {
             String content="<html>\n" +
@@ -90,11 +85,11 @@ categories:
     
     }
 
-    
+
+​    
 
 
 
 &nbsp;&nbsp;&nbsp;&nbsp; 本人授权[维权骑士](http://rightknights.com)对我发布文章的版权行为进行追究与维权。未经本人许可，不可擅自转载或用于其他商业用途。
 
 
- 

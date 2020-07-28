@@ -1,13 +1,13 @@
 ---
-title: 六、Spring Boot定时任务
-date: 2020-02-15 11:00:00
+title: 十六、Spring Boot定时任务
+date: 2020-06-29 13:00:00
 tags:
  - Spring Boot
 categories:
  - Spring Boot
 ---
 
-   * 1、**pom依赖**<br/>  
+## 一、pom依赖
 
     <dependencies>
      	<dependency>
@@ -20,19 +20,18 @@ categories:
      		<scope>test</scope>
      	</dependency>
     </dependencies>
-   * 2、**启动类注解@EnableScheduling**<br/>  
+## 二、启动类注解@EnableScheduling
 
     @EnableScheduling
     
-   * 3、**定时任务实现类**<br/>    
+## 三、定时任务实现类
     
     @Scheduled(cron = "0/5 * * * * *")
     public void cron() {
         System.out.println(new Date());
     }
     
-    
-   * 4、**配置文件形式**<br/>      
+## 四、配置文件形式   
     
 &nbsp;&nbsp;&nbsp;&nbsp;那我们有多个定时任务且需要经常更改，每次都要找@Scheduled来更改cron表达式很不方便，可改为以配置文件的形式操作<br>    
     

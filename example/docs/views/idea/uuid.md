@@ -2,9 +2,9 @@
 title: IDEA使用详解
 date: 2020-05-20
 tags:
- - IDEA
+ - 工具使用
 categories:
- - IDEA
+ - 工具使用
 ---
 
 &nbsp;&nbsp;&nbsp;&nbsp;本文记录idea日常使用，长期更新。<br/>

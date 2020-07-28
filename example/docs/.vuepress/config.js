@@ -23,7 +23,7 @@ module.exports = {
           https://www.zhihu.com/people/laughing-yaoyao*/
           { text: 'QQ:619426619', link: '/', icon: 'reco-qq' },
           { text: 'WeChat', link: '/views/61421.html', icon: 'reco-wechat' },
-          { text: 'Zhihu', link: '', icon: 'reco-zhihu' },
+          { text: 'Zhihu', link: 'https://www.zhihu.com/people/laughing-yaoyao', icon: 'reco-zhihu' },
         ]
       }
     ],
@@ -48,11 +48,11 @@ module.exports = {
     // 自动形成侧边导航
     sidebar: 'auto',
     // 最后更新时间
-    lastUpdated: 'Last Updated',
+    lastUpdated: '',
     // 作者
     author: 'laughing',
     // 备案号
-    record: '备案号',
+    record: '京ICP备20013876',
     // 项目开始时间
     startYear: '2019',
     /**
