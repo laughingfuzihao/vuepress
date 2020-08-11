@@ -167,7 +167,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7001/eureka/ 
+      defaultZone: http://localhost:7001/eureka/
 </code></pre></div><h3 id="enableeurekaclient"><a href="#enableeurekaclient" class="header-anchor">#</a> @EnableEurekaClient</h3> <div class="language- extra-class"><pre class="language-text"><code>@SpringBootApplication
 @EnableEurekaClient
 @EnableDiscoveryClient
@@ -203,7 +203,7 @@ eureka:
 
       #集群：7002 注册到 7001
       defaultZone: http://Eureka7001.com:7001/eureka/
-</code></pre></div><p>把同一个Eureka 改配置启动两次，即可实现。<br></p> <p>注意服务注册时，两台Eureka 都要写</p> <p><img src="C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20200701151041134.png" alt="image-20200701151041134"></p> <h2 id="五、eureka自我保护"><a href="#五、eureka自我保护" class="header-anchor">#</a> 五、Eureka自我保护</h2> <p>默认情况下，当eureka server在一定时间内没有收到实例的心跳，便会把该实例从注册表中删除（默认是90秒），但是，如果短时间内丢失大量的实例心跳，便会触发eureka server的自我保护机制。</p> <p>Eureka在运行期间会统计心跳失败的比例，在15分钟内是否低于85%,如果出现了低于的情况，Eureka Server会将当前的实例注册信息保护起来，同时提示一个警告，一旦进入保护模式，Eureka Server将会尝试保护其服务注册表中的信息，不再删除服务注册表中的数据。也就是不会注销任何微服务。</p> <p><img src="/assets/img/image-20200701170323647.0da8aa61.png" alt="image-20200701170323647"></p> <p>该保护机制的目的是避免网络连接故障，在发生网络故障时，微服务和注册中心之间无法正常通信，但服务本身是健康的，不应该注销该服务。</p> <h3 id="禁止自我保护"><a href="#禁止自我保护" class="header-anchor">#</a> 禁止自我保护</h3> <div class="language- extra-class"><pre class="language-text"><code>eureka:
+</code></pre></div><p>把同一个Eureka 改配置启动两次，即可实现。<br></p> <p>注意服务注册时，两台Eureka 都要写</p> <p><img src="./image-20200701151041134.png" alt="image-20200701151041134"></p> <h2 id="五、eureka自我保护"><a href="#五、eureka自我保护" class="header-anchor">#</a> 五、Eureka自我保护</h2> <p>默认情况下，当eureka server在一定时间内没有收到实例的心跳，便会把该实例从注册表中删除（默认是90秒），但是，如果短时间内丢失大量的实例心跳，便会触发eureka server的自我保护机制。</p> <p>Eureka在运行期间会统计心跳失败的比例，在15分钟内是否低于85%,如果出现了低于的情况，Eureka Server会将当前的实例注册信息保护起来，同时提示一个警告，一旦进入保护模式，Eureka Server将会尝试保护其服务注册表中的信息，不再删除服务注册表中的数据。也就是不会注销任何微服务。</p> <p><img src="/assets/img/image-20200701170323647.0da8aa61.png" alt="image-20200701170323647"></p> <p>该保护机制的目的是避免网络连接故障，在发生网络故障时，微服务和注册中心之间无法正常通信，但服务本身是健康的，不应该注销该服务。</p> <h3 id="禁止自我保护"><a href="#禁止自我保护" class="header-anchor">#</a> 禁止自我保护</h3> <div class="language- extra-class"><pre class="language-text"><code>eureka:
   instance:
     hostname: localhost
   server:

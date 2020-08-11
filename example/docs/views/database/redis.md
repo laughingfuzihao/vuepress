@@ -111,11 +111,11 @@ dir ./ #指定本地数据库存放目录
 
  默认安装目录
 
-![image-20200714141201929](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20200714141201929.png) 
+![image-20200714141201929](./image-20200714141201929.png) 
 
 调整为后台启动，修改配置文件**redis.conf**
 
-![image-20200714141612453](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20200714141612453.png)
+![image-20200714141612453](./image-20200714141612453.png)
 
 启动命令：
 
@@ -123,7 +123,7 @@ dir ./ #指定本地数据库存放目录
 redis-server redis.conf
 ```
 
-![image-20200714141750005](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20200714141750005.png)
+![image-20200714141750005](./image-20200714141750005.png)
 
 连接：
 
@@ -131,17 +131,17 @@ redis-server redis.conf
 redis-cli -p 6379
 ```
 
-![image-20200714141913541](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20200714141913541.png)
+![image-20200714141913541](./image-20200714141913541.png)
 
 默认有16个数据库
 
-![image-20200714142409923](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20200714142409923.png)
+![image-20200714142409923](./image-20200714142409923.png)
 
 
 
 切换数据库
 
-![image-20200714142514585](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20200714142514585.png)
+![image-20200714142514585](./image-20200714142514585.png)
 
 ## 三、Redis 普通数据类型
 
@@ -166,7 +166,7 @@ OK
 127.0.0.1:6379> 
 ```
 
-![image-20200714145814525](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20200714145814525.png)
+![image-20200714145814525](./image-20200714145814525.png)
 
 value自增加,比如一篇文章的浏览数量
 
@@ -182,7 +182,7 @@ value自增加,比如一篇文章的浏览数量
 127.0.0.1:6379> decrby views 10
 ```
 
-![image-20200714150155918](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20200714150155918.png)
+![image-20200714150155918](./image-20200714150155918.png)
 
 截取字符串
 
@@ -193,7 +193,7 @@ value自增加,比如一篇文章的浏览数量
 "val"
 ```
 
-![image-20200714150442282](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20200714150442282.png)
+![image-20200714150442282](./image-20200714150442282.png)
 
 字符串替换
 
@@ -207,7 +207,7 @@ value自增加,比如一篇文章的浏览数量
 
 
 
-![image-20200714150640187](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20200714150640187.png)
+![image-20200714150640187](./image-20200714150640187.png)
 
 
 
@@ -226,7 +226,7 @@ OK
 "myvalue"
 ```
 
-![image-20200714151153611](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20200714151153611.png)
+![image-20200714151153611](./image-20200714151153611.png)
 
 mset和mget
 
@@ -241,7 +241,7 @@ OK
 
 ```
 
-![image-20200714151401612](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20200714151401612.png)
+![image-20200714151401612](./image-20200714151401612.png)
 
 应用场景：
 
@@ -276,7 +276,7 @@ OK
 4) "xxx"
 ```
 
-![image-20200714152722988](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20200714152722988.png)
+![image-20200714152722988](./image-20200714152722988.png)
 
 移除
 
@@ -315,7 +315,7 @@ list长度
 
 ### set集合
 
-![image-20200714122659860](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20200714122659860.png)
+![image-20200714122659860](./image-20200714122659860.png)
 
 
 
@@ -358,7 +358,7 @@ redis 127.0.0.1:6379> Expire KEY_NAME TIME_IN_SECONDS
 redis 127.0.0.1:6379> PERSIST KEY_NAME
 ```
 
-![image-20200714144003626](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20200714144003626.png)
+![image-20200714144003626](./image-20200714144003626.png)
 
 查看过期时间：
 

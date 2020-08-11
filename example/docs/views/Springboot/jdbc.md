@@ -57,7 +57,7 @@ yml配置的信息会注入到DataSourceProperties类中，**DataSourceAutoConfi
 
 在JdbcTemplateAutoConfiguration中JdbcProperties已经注入了一个模板bean.
 
-![image-20200627154554964](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20200627154554964.png)
+![image-20200627154554964](./image-20200627154554964.png)
 
 
 

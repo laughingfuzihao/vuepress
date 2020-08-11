@@ -1,6 +1,6 @@
 ---
-title: 三、Spring Security RBAC 基于角色的权限控制
-date: 2020-05-22 16:00:00
+title: 一、认证授权基本概念
+date: 2020-08-11 08:00:00
 tags:
  - Spring Security
 categories:
@@ -8,6 +8,26 @@ categories:
 ---
 
 
+## 一、基本概念
+
+### 认证 (authentication) 
+
+认证是判断用户身份是否合法的过程。如密码登录、二维码登录等。
+
+### 基于**session**的会话认证方式
+
+![image-20200811093102718](./image-20200811093102718.png)
+
+### 基于**token**的会话认证方式
+
+![image-20200811093632124](./image-20200811093632124.png)
+
+
+### 授权(Authorization)
+授权是尝试对用户授予访问或操作权限的过程
+
+
+## 二、以角色为基础的权限管理设计RBAC
 
 RBAC（Role-Based Access Control，基于角色的访问控制），就是用户通过角色与权限进行关联。
 简单地说，一个用户拥有若干角色，每一个角色拥有若干权限。这样，就构造成“用户-角色-权限”的授权模型。在这种模型中，用户与角色之间，角色与权限之间，一般是多对多的关系。<br>
@@ -18,7 +38,8 @@ RBAC（Role-Based Access Control，基于角色的访问控制），就是用户
 
 ![logo](./ss9.png)  <br>
 
-
+   用户表、角色表、角色权限表
+（用户角色关系表）（角色权限关系表）
 
 ```sql
 CREATE TABLE `tb_permission` (
@@ -76,6 +97,38 @@ CREATE TABLE `tb_user_role` (
 
 
 
-&nbsp;&nbsp;&nbsp;&nbsp; 本人授权[维权骑士](http://rightknights.com)对我发布文章的版权行为进行追究与维权。未经本人许可，不可擅自转载或用于其他商业用途。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

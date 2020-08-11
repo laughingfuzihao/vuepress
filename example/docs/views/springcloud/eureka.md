@@ -175,7 +175,7 @@ eureka:
 
 注意服务注册时，两台Eureka 都要写
 
-![image-20200701151041134](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20200701151041134.png)
+![image-20200701151041134](./image-20200701151041134.png)
 
 
 
