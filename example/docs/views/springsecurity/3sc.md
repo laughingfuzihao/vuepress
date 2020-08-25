@@ -49,7 +49,7 @@ AuthenticationManagerBuilder 为认证管理器构建器。
 
 
 
-
+![image-20200812102621994](./image-20200812102621994.png)
 
 
 
